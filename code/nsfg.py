@@ -116,7 +116,7 @@ def MakePregMap(df):
     returns: dict that maps from caseid to list of indices into `preg`
     """
     d = defaultdict(list)
-    for index, caseid in df.caseid.iteritems():
+    for index, caseid in df.caseid.items():
         d[caseid].append(index)
     return d
 
